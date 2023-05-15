@@ -7,7 +7,8 @@ function clock() {
     const end = new Date(endDate)
     const now = new Date()
 
-    const diff = (end - now) / 1000;
+    const diff = (end - now) / 1000; //converting milisecond to second
+    // console.log(diff);
 
     if (diff < 0) return;
 
@@ -28,5 +29,5 @@ function clock() {
 clock()
 
 setInterval(()=>{
-        clock()
-    },1000)
+    clock()
+},1000)
