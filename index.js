@@ -1,11 +1,19 @@
-const endDate = "20 December 2022 11:20:00 PM"
+// const endDate = "20 December 2022 11:20:00 PM"
+// const endDate = document.getElementById("set-date").value;
 
-document.getElementById("end-date").innerText = endDate;
+// document.getElementById("end-date").innerText = endDate;
 const inputs = document.querySelectorAll("input")
-    
+  
+
 function clock() {
+    const endDate = document.getElementById("set-date").value;
+    document.getElementById("end-date").innerText = endDate;
+
     const end = new Date(endDate)
     const now = new Date()
+
+    // console.log(end);
+    // console.log(now);
 
     const diff = (end - now) / 1000; //converting milisecond to second
     // console.log(diff);
